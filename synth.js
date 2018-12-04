@@ -21,7 +21,7 @@ function vorbeste()
 	synth.speak(enunt);
 	
 	var myRate = speechSynthesisUtteranceInstance.rate;
-    speechSynthesisUtteranceInstance.rate = 10.5;
+    speechSynthesisUtteranceInstance.rate = 100.5;
 	
 	
 	
