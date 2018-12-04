@@ -20,6 +20,9 @@ function vorbeste()
 	enunt.lang = "en-GB";
 	synth.speak(enunt);
 	
+	var myRate = speechSynthesisUtteranceInstance.rate;
+    speechSynthesisUtteranceInstance.rate = 10.5;
+	
 	
 	
 }
