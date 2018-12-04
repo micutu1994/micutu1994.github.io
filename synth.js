@@ -6,7 +6,7 @@ function afiseaza_voci()
 {
 	
 	var lista_voci = synth.getVoices();
-	
+	document.getElementById("id_voci").innerHTML = "";
 	for (var i = 0; i < lista_voci.length; i++)
 		document.getElementById("id_voci").innerHTML +=
 				lista_voci[i].lang + " " + lista_voci[i].name + "<br>";
