@@ -17,7 +17,7 @@ function vorbeste()
 {
 	var enunt = new SpeechSynthesisUtterance();
 	enunt.text = document.getElementById("id_text").value;
-	enunt.lang = "en-GB";
+	enunt.lang = "en-US";
 	synth.speak(enunt);
 	
 	var myRate = speechSynthesisUtteranceInstance.rate;
