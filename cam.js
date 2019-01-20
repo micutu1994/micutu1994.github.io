@@ -11,7 +11,7 @@ function on_error(e)
 	alert("eroare camera");
 }
 //------------------------
-function start()
+function Pornire_camera()
 {
 	var p = {audio: true, video: true};
 	navigator.mediaDevices.getUserMedia(p).then(on_ok).catch(on_error);
