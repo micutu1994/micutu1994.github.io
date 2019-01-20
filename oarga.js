@@ -8,7 +8,7 @@ function on_device_orientation(e)
 	document.getElementById("id_x").innerHTML ="x " + Math.round(e.beta * 100)/100;
 }
 
-function on_device_motion(e)
+/* function on_device_motion(e)
 {
 	document.getElementById("id_acc_x").innerHTML="acc x =" + Math.round(e.acceleration.x * 100)/100;
 	document.getElementById("id_acc_y").innerHTML="acc y =" + Math.round(e.acceleration.y * 100)/100;
@@ -26,4 +26,4 @@ function on_device_motion(e)
 	
 	
 	
-}
+}   */
