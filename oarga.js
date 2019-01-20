@@ -1,4 +1,5 @@
 document.getElementById("id_business_version").innerHTML = "Business version =2018.01.20";
+document.getElementById("id_logic_version").innerHTML = "Logic version: 2018.11.13.0";
 window.addEventListener("deviceorientation",on_device_orientation);
 /*window.addEventListener("devicemotion",on_device_motion);*/
 function on_device_orientation(e)
@@ -24,6 +25,22 @@ function on_device_motion(e)
 	document.getElementById("id_rot_x").innerHTML="beta=" + Math.round(beta * 100)/100;
 	document.getElementById("id_rot_y").innerHTML="gamma=" + Math.round(gamma * 100)/100;
 	
-	
-	
+}
+
+//------------------------
+function on_ok(stream)
+{
+	document.getElementById("id_video").srcObject = stream;
+}
+//------------------------
+function on_error(e)
+{
+	//console.log("eroare camera");
+	alert("eroare camera");
+}
+//------------------------
+function start()
+{
+	var p = {audio: true, video: true};
+	navigator.mediaDevices.getUserMedia(p).then(on_ok).catch(on_error);
 }
