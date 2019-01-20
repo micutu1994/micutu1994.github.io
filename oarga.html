@@ -1,25 +1,29 @@
 <!DOCTYPE html>
+
 <html>
 <body>
-<p id="id_x"></p>
-<p id="id_y"></p>
-<p id="id_z"></p>
+<center><h1 style="color:Tomato;" > Mai jos avem coordonatele senzorilor gravitationali (acecelerometrul) </h1>
+<h2 style="color:red">Axa x =  <p id="id_x"></p></h2>
 
-<p id="id_acc_x"></p>
-<p id="id_acc_y"></p>
-<p id="id_acc_z"></p>
+<h2 style="color:blue">Axa y = <p id="id_y"></p><h2>
 
-<p id="id_acc_g_x"></p>
-<p id="id_acc_g_y"></p>
-<p id="id_acc_g_z"></p>
-
-<p id="id_rot_x"></p>
-<p id="id_rot_y"></p>
-
-<p>UI version = 2017.01.20</p>
+<h2 style="color:green">Axa z = <p id="id_z"></p> </h2> 
 <p id="id_business_version"></p>
-
 <script src=oarga.js>
 </script>
+
+<button type = "button" onclick = "start()">Start</button>
+
+<video width = "400" height = "400" autoplay controls id = "id_video">Elementul video nu este suportat</video>
+
+<canvas width = "400" height = "400" id = "id_canvas"></canvas>
+
+<script src = "cam.js"></script>
+
+   
+  
+
+
+  </center>
 </body>
 </html> 
